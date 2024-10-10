@@ -1,18 +1,24 @@
+import 'package:bookly_app/Conatants.dart';
+import 'package:bookly_app/Features/Splash/Presentation/views/Splach_view.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const BooklyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class BooklyApp extends StatelessWidget {
+  const BooklyApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  GetMaterialApp(
+      theme: ThemeData().copyWith(
+        scaffoldBackgroundColor: KPrimaryColor,
+      ),
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      home:const SplachView(),
     );
   }
 }
