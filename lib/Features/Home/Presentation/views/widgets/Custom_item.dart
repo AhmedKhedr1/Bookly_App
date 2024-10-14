@@ -9,7 +9,7 @@ class Custom_item extends StatelessWidget {
     return AspectRatio(
       aspectRatio:2/3,
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(0),
         child: Container(
           decoration:  BoxDecoration(
             borderRadius: BorderRadius.circular(16),
