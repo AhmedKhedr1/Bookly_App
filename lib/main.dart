@@ -1,8 +1,6 @@
 import 'package:bookly_app/Conatants.dart';
-import 'package:bookly_app/Features/Splash/Presentation/views/Splach_view.dart';
 import 'package:bookly_app/core/utils/AppRouter.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
