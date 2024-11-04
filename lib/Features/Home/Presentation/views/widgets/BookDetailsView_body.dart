@@ -2,7 +2,8 @@ import 'package:bookly_app/Conatants.dart';
 import 'package:bookly_app/Features/Home/Presentation/views/widgets/BookAction.dart';
 import 'package:bookly_app/Features/Home/Presentation/views/widgets/BookRating.dart';
 import 'package:bookly_app/Features/Home/Presentation/views/widgets/CustomBookImage.dart';
-import 'package:bookly_app/core/Widgets/Custom_Button.dart';
+import 'package:bookly_app/Features/Home/Presentation/views/widgets/FeaturedBookListView.dart';
+import 'package:bookly_app/Features/Home/Presentation/views/widgets/SimilarBookListView.dart';
 import 'package:bookly_app/core/utils/AppRouter.dart';
 import 'package:bookly_app/core/utils/Styles.dart';
 import 'package:flutter/material.dart';
@@ -41,7 +42,7 @@ class BookdetailsviewBody extends StatelessWidget {
           children: [
             Padding(
               padding: EdgeInsets.only(left: width * 0.2, right: width * 0.1),
-              child: const SizedBox(height: 300, child: CustomBookImage()),
+              child: const SizedBox(height: 280, child: CustomBookImage()),
             ),
             const Text(
               'The Jungle Book',
@@ -69,13 +70,27 @@ class BookdetailsviewBody extends StatelessWidget {
                 BookRating(),
               ],
             ),
-            const SizedBox(height: 37,),
-           const Row(
+            const SizedBox(
+              height: 37,
+            ),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 BookAction(),
               ],
-            )
+            ),
+            const SizedBox(
+              height: 50,
+            ),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'You can also like ',
+                style: Styles.textStyle14.copyWith(fontWeight: FontWeight.w900,fontSize: 14),
+              ),
+            ),
+            SizedBox(height: 15,),
+            Similarbooklistview()
           ],
         ),
       ),
