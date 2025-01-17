@@ -9,18 +9,16 @@ void main() {
 
 class BooklyApp extends StatelessWidget {
   const BooklyApp({super.key});
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      routerConfig: Approuter.router ,
+      routerConfig: Approuter.router,
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: KPrimaryColor,
         textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
       ),
       debugShowCheckedModeBanner: false,
-      
     );
   }
 }
