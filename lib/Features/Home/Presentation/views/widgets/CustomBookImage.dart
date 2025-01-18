@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
-class FeaturedItem extends StatelessWidget {
-  const FeaturedItem({super.key});
-
+class CustomBookImage extends StatelessWidget {
+ CustomBookImage({super.key,this.width});
+  double? width;
   @override
   Widget build(BuildContext context) {
     return Container(
       height: MediaQuery.of(context).size.height * .3,
+      width: width,
       child: AspectRatio(
-        aspectRatio: 2.5 / 4,
+        aspectRatio: 2.7 / 4,
         child: Container(
           decoration: BoxDecoration(
             color: Colors.red,
