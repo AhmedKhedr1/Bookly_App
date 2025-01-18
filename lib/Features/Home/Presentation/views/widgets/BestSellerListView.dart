@@ -1,26 +1,27 @@
+// ignore_for_file: file_names
 
-import 'package:bookly_app/Features/Home/Presentation/views/widgets/BestSellerItem.dart';
+import 'package:bookly_app/Features/Home/presentation/Views/Widgets/BestSellerItem.dart';
 import 'package:flutter/material.dart';
 
-class BestSellerListview extends StatelessWidget {
-  const BestSellerListview({
+class BestSellerListView extends StatelessWidget {
+  const BestSellerListView({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      padding: EdgeInsets.zero,
-      physics: NeverScrollableScrollPhysics(),
       shrinkWrap: true,
+      physics: NeverScrollableScrollPhysics(),
+      padding: EdgeInsets.zero,
       scrollDirection: Axis.vertical,
+      itemCount: 10,
       itemBuilder: (context, index) {
-        return const Padding(
-          padding: const EdgeInsets.symmetric(vertical: 0,horizontal: 10),
-          child: const BestSelleritem(),
+        return const  Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          child: BestSellerItem(),
         );
       },
-      itemCount: 10,
     );
   }
 }
