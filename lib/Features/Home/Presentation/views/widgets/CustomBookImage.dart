@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomBookImage extends StatelessWidget {
- CustomBookImage({super.key,this.width});
+  CustomBookImage({super.key, this.width});
   double? width;
   @override
   Widget build(BuildContext context) {

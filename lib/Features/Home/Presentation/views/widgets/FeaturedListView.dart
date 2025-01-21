@@ -15,9 +15,10 @@ class FeaturedListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: 10,
         itemBuilder: (context, index) {
-          return  Padding(
+          return Padding(
             padding: EdgeInsets.symmetric(horizontal: 8),
-            child: CustomBookImage( width: MediaQuery.of(context).size.width*.4),
+            child:
+                CustomBookImage(width: MediaQuery.of(context).size.width * .4),
           );
         },
       ),

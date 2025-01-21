@@ -4,8 +4,6 @@ import 'package:bookly_app/Features/Home/Domain/Entities/BookEntities.dart';
 import 'package:dartz/dartz.dart';
 
 abstract class Homerepo {
-
-Future<Either<Failure,List<BookEntities>>> FetchFeatiredBooks();
-Future<Either<Failure,List<BookEntities>>> FetchNewestBooks();   
-
+  Future<Either<Failure, List<BookEntities>>> FetchFeatiredBooks();
+  Future<Either<Failure, List<BookEntities>>> FetchNewestBooks();
 }

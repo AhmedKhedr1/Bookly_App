@@ -15,5 +15,3 @@ class FetchfeaturedbooksUsecase extends usecase<List<BookEntities>, NoParam> {
     return await homerepo.FetchFeatiredBooks();
   }
 }
-
-

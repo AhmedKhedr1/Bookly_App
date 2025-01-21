@@ -19,13 +19,13 @@ class BestSellerListView extends StatelessWidget {
       scrollDirection: Axis.vertical,
       itemCount: 10,
       itemBuilder: (context, index) {
-        return   Padding(
+        return Padding(
           padding: const EdgeInsets.symmetric(vertical: 10),
           child: GestureDetector(
-            onTap: () {
-              GoRouter.of(context).push(Approuter.KBookDetailsView);
-            },
-            child: BestSellerItem()),
+              onTap: () {
+                GoRouter.of(context).push(Approuter.KBookDetailsView);
+              },
+              child: BestSellerItem()),
         );
       },
     );

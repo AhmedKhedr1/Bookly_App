@@ -16,7 +16,7 @@ class Bookdetailsview extends StatelessWidget {
         automaticallyImplyLeading: false,
         title: IconButton(
           onPressed: () {
-           GoRouter.of(context).pop();
+            GoRouter.of(context).pop();
           },
           icon: const Icon(Icons.close),
         ),
