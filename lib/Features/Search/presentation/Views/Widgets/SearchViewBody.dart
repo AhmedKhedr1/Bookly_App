@@ -14,7 +14,7 @@ class Searchviewbody extends StatelessWidget {
       child: Column(
         children: [
           const SizedBox(
-            height: 8,
+            height: 16,
           ),
           Row(
             children: [
@@ -23,7 +23,9 @@ class Searchviewbody extends StatelessWidget {
                 padding: EdgeInsets.only(left: 16),
                 child: CustomSearchtextField(),
               )),
-              IconButton(onPressed: () {}, icon: const Icon(Icons.close))
+              IconButton(onPressed: () {
+                GoRouter.of(context).pop();
+              }, icon: const Icon(Icons.close))
             ],
           ),
           const Expanded(
